@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy's Fazber coffee</title>
+    <link rel="stylesheet" href="css/styleBebidas.css">
+</head>
+
+<body>
+    <header>
+        <table class="color">
+            <td>
+                <a href="index.html"><img src="img/logo.png" alt="logotipo" width="150px"
+                        style="padding-left: 10px;"></a>
+            </td>
+            <td>
+                <h2><a>"El rico aroma del café"</a></h2>
+            </td>
+            <td>
+                <a href="index.html"><input id="btnCerrar" type="button" value="Cerrar sesión" class="button"></a>
+            </td>
+        </table>
+    </header>
+    <hr>
+    <nav class="color">
+        <ul>
+            <li><a href="Bebidas.html" id="btnBebidas">BEBIDAS</a></li>
+            <li><a href="" id="btnPostres">POSTRES</a></li>
+            <li><a href="" id="btnOfertas">OFERTAS</a></li>
+            <li><a href="" id="btnAccesorios">ACCESORIOS</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <table id="caliente" class="mostrar">
+            <td>
+                <img src="img/bebidascalientes.jpg" alt="bebidas" width="700px" height="450px">
+            </td>
+            <td>
+                <h1>BEBIDAS CALIENTES</h1><br>
+                <p>Para este frio, hay una variedad de bebidas calientes con un aroma exquisito.</p>
+                <div class="container">
+                <input type="button" id="btnMas" value="más +" style="margin: 50px;">
+                <input type="button" id="btnMenos" value="menos -">
+                </div>
+            </td>
+        </table>
+        <hr>
+        <br>
+        <table id="frio" class="mostrar">
+            <td>
+                <h1>BEBIDAS FRIAS</h1><br>
+                <p>Para este verano, refrescate con las bebidas frias y la gran variedad de sabores y colores.</p>
+                <div class="container">
+                <input type="button" id="btnMas2" value="más +" style="margin: 50px;">
+                <input type="button" id="btnMenos2" value="menos -">
+                </div>
+            </td>
+            <td>
+                <img src="img/bebidasfrias.jpg" alt="bebidas" width="700px" height="450px">
+            </td>
+        </table>
+        <hr>
+        <h1> Bebidas </h1>
+        <article id="aparicion" class="mostrar"></article>
+        <article id="aparicion2" class="mostrar"></article>
+    </section>
+    <hr>
+
+    <div style="padding: 20px;" id="comentarios">
+        <footer style="padding: 20px;" id="comentarios">
+            <h3>Comentarios:</h3>
+            <section>
+            <h4>Usuario</h4>
+            <input type="text" placeholder="Escribe le título" id=txtTitle2>
+            <br><br>
+            <h4>Comenta</h4>
+            <input type="text" placeholder="Escribe la descripción" id="txtDescription2">
+            <br><br>
+            <input type="button" value="Publicar" id="btnPublicar2">
+            <br><br>
+            </section>
+            <section class="centrar" id="ImprimirComentariosEnPantalla2"></section>
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="main2.js"></script>
+</body>
+
+</html>
